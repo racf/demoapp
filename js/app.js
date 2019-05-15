@@ -1,6 +1,14 @@
 
+//validamos la url en la que se despliega la aplicación
+var url = window.location.href;
+var swLocation = 'demoapp/service-worker.js';
+
 if ( navigator.serviceWorker ){
-    navigator.serviceWorker.register('/service-worker.js');
+    if( url.includes('localhost') ){
+        swLocation = '/service-worker.js';
+    }
+
+    navigator.serviceWorker.register( swLocation );
 }
 
 // Referencias de jQuery

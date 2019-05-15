@@ -6,7 +6,7 @@ const CACHE_DINAMICO = "chache-dinamico-v1.1";
 const CACHE_INMUTABLE = "chache-inmutable-v1.0";
 
 const APP_SHELL = [
-    '/', //La petición slash es necesaría para cargar la información.
+   // '/', //La petición slash es necesaría para cargar la información en local pero no se utiliza para producción.
     'index.html',
     'css/style.css',
     'img/favicon.ico',
@@ -23,7 +23,7 @@ const APP_SHELL_INMUTABLE = [
     'https://fonts.googleapis.com/css?family=Quicksand:300,400',
     'https://fonts.googleapis.com/css?family=Lato:400,300',
     'https://use.fontawesome.com/releases/v5.3.1/css/all.css',
-    '/css/animate.css',
+    'css/animate.css',
     'js/libs/jquery.js'
 ];
 
