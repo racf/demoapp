@@ -1,7 +1,7 @@
 
 //validamos la url en la que se despliega la aplicación
 var url = window.location.href;
-var swLocation = 'demoapp/service-worker.js';
+var swLocation = '/demoapp/service-worker.js';
 
 if ( navigator.serviceWorker ){
     if( url.includes('localhost') ){
